@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bank-dashboard</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-green-50">
+    <header>
+        <h1 class="text-5xl text-center mt-12">Let's get some<span class="text-blue-500 font-bold"> Money</span> !!!
+        </h1>
+    </header>
+    <main class="w-3/4 mx-auto mt-16">
+        <section class="grid grid-cols-3 gap-5 text-white font-bold">
+            <div class="bg-green-500 rounded p-10 ">
+                <h3 class="text-3xl">Deposit</h3>
+                <h4 class="text-4xl">$ <span id="deposit">00</span></h4>
+            </div>
+            <div class="bg-yellow-500 rounded p-10 ">
+                <h3 class="text-3xl">Withdraw</h3>
+                <h4 class="text-4xl">$ <span id="withdraw">00</span></h4>
+            </div>
+            <div class="bg-blue-500 rounded p-10 ">
+                <h3 class="text-3xl">Balance</h3>
+                <h4 class="text-4xl">$ <span id="balance">2000</span></h4>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-2 gap-5 font-bold mt-16">
+
+            <div class="bg-purple-300 rounded p-10 ">
+                <h3 class="text-4xl">Please Deposit</h3>
+
+                <input type="text" name="text" class="w-full block rounded border border-gray-500 mt-3 px-1"
+                    placeholder="$ amount you want to deposit" id="user-deposit-input">
+                <p id="null-p1"></p>
+
+                <button class="bg-blue-800 text-white font-bold rounded px-8 py-2 mt-5"
+                    id="deposit-btn">Deposit</button>
+
+            </div>
+            <div class="bg-red-300 rounded p-10 ">
+                <h3 class="text-4xl">Please Withdraw</h3>
+
+                <input type="text" name="text" class="w-full block rounded border border-gray-500 mt-3 px-1"
+                    placeholder="$ amount you want to withdraw" id="user-withdraw-input">
+                <p id="null-p2"></p>
+
+
+                <button class="bg-blue-800 text-white font-bold rounded px-8 py-2 mt-5"
+                    id="withdraw-btn">withdraw</button>
+
+            </div>
+
+
+        </section>
+    </main>
+    <script src="/js/bank.js"></script>
+
+</body>
+
+</html>
